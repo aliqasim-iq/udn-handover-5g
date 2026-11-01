@@ -1,0 +1,2 @@
+run,isd,gridN,ues,speeds,policy,hys,ttt,tm,numHO,hoRate,texec_ms,tpre_ms,tpost_ms,tint_ms,lostPerHo,plr_pct,hoPlr_pct,pp1_pct,pp3_pct,guard_pct,hoFail,rlf,outage_pct,thr_Mbps,delay_ms,tpreRadio_ms,pRadioGap,macGap_ms
+8,25,4,32,"3,30,60,120",a3,3,256,40,1179,0.635237,2.64328,112.65,192.496,286.881,73.7865,33.8082,22.2223,7.46395,11.8745,0,0,62,35.6118,1.11414,52.9406,197.253,0.832909,0.0998182

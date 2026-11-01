@@ -1,0 +1,11 @@
+sg 300 runs in 2085 s
+pp3 240 runs in 1538 s
+Traceback (most recent call last):
+  File "~/ns-3-dev/paper_v2/model/run_all.py", line 139, in <module>
+    main(sys.argv[1])
+    ~~~~^^^^^^^^^^^^^
+  File "~/ns-3-dev/paper_v2/model/run_all.py", line 128, in main
+    jobs.append(dict(base, og, tag='og_thr%+.1f' % thr, g_thr=thr))
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict expected at most 1 argument, got 2
+sens 150 runs in 1472 s

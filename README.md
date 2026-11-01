@@ -1,0 +1,31 @@
+# Supplementary material — "Why Handovers Interrupt Service in Ultra-Dense 5G Networks"
+
+## tlmc/ — decision-delay model and trigger-level Monte-Carlo (TL-MC) simulator
+- `model/udn_model.py` analytical model; `model/tl_mc.py` simulator; `model/run_all.py` experiments
+  (`SEEDS=10 PROCS=4 python3 run_all.py kappa|val|scheme|sg|pp3|sens|lite`, needs numpy + scipy)
+- `model/res_*.json` raw results used in Sections 4–6; `figs/*.py` regenerate Figures 1–6
+
+## ns3_5g-lena/ — system-level evaluation (Section 7)
+- Requires ns-3.48 + 5G-LENA v5.0 (commit 47a3adc). Copy the `.cc/.py` files into `scratch/`.
+- `nr-udn-handover.cc`: scenario (square torus wrap-around, correlated LOS, OG-A3 guard, per-HO tracing)
+- `nr-udn-handover-v2.cc`: identical, plus `--pktInterval` (experiment E5)
+- `nr-udn-handover-v3.cc`: v2 plus the radio-level gap, MAC gap and outage-margin diagnostics, the A3 + return-block policy (`--policy=a3rb`) and the RLC-UM options (`--rlcReorderMs`, `--rlcOoo`); used for E7 and E8
+- `nr-udn-rerun.py`: re-runs runs aborted by 5G-LENA (same seed truncated before the abort, or a new seed)
+- `nr-udn-experiments.py`: run matrix E1–E4, E6 (OG-A3-lite), E7 (10 seeds x 60 s scheme comparison) and E8 (RLC t-Reordering 10 ms) (resumable, safe to run several instances)
+  e.g. `python3 scratch/nr-udn-experiments.py --sets E4 --procs 4 --seeds 5 --ogThr -5.5 --ogCal -2.5`
+- `run_e5.sh`: light-load experiment E5; `nr-udn-analysis.py`: statistics (`sys_stats.json`) and Figures 7–10
+
+## results/
+- `5g-lena_raw/`: per-run summaries and per-HO records of all 5G-LENA runs
+- `calibration_runs/`, `calib.json`: guard-threshold calibration (seeds 101–103, not used for evaluation)
+- `sys_stats.json`: aggregated system-level statistics (mean, 95% CI)
+- `run_logs/`: runner logs of E7/E8, including the aborted runs and how they were re-run
+
+## License
+- Python scripts, results and figures: MIT (see `LICENSE`).
+- The ns-3 scenario files `ns3_5g-lena/*.cc` are derived from ns-3 / 5G-LENA and keep their
+  `GPL-2.0-only` license, as stated in their headers.
+
+## Citation
+If you use this code or data, please cite the article
+"Why Handovers Interrupt Service in Ultra-Dense 5G Networks" (submitted to *Computer Communications*).

@@ -1,0 +1,2 @@
+run,isd,gridN,ues,speeds,policy,hys,ttt,tm,numHO,hoRate,texec_ms,tpre_ms,tpost_ms,tint_ms,lostPerHo,plr_pct,hoPlr_pct,pp1_pct,pp3_pct,guard_pct,hoFail,rlf,outage_pct,thr_Mbps,delay_ms
+2,50,4,32,"60",a3,3,256,40,374,0.649306,2.7199,55.7637,80.7565,139.659,42.5562,22.0191,12.5753,9.62567,14.7059,0,0,5,24.2075,1.31257,47.8043

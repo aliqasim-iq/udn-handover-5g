@@ -1,0 +1,145 @@
+254 runs
+[1/254] E7 isd25_tm40_mix_a3t100 r6 ok
+[2/254] E7 isd25_tm40_mix_a3t100 r1 ok
+[3/254] E7 isd25_tm40_mix_a3t256 r6 ok
+[4/254] E7 isd25_tm40_mix_a3t256 r9 ok
+[5/254] E7 isd25_tm40_mix_a3t100 r8 ok
+[6/254] E7 isd25_tm40_mix_a3t256 r4 ok
+[7/254] E7 isd25_tm40_mix_a3t100 r4 ok
+[8/254] E7 isd25_tm40_mix_a3t40 r10 ok
+[9/254] E7 isd25_tm40_mix_a3t256 r3 ok
+[10/254] E7 isd25_tm40_mix_a3t40 r4 ok
+[11/254] E7 isd25_tm40_mix_a3t100 r5 ok
+[12/254] E7 isd25_tm40_mix_a3t256 r8 ok
+[13/254] E7 isd25_tm40_mix_a3t100 r2 ok
+[14/254] E7 isd25_tm40_mix_a3t40 r3 ok
+[15/254] E7 isd25_tm40_mix_a3t256 r2 ok
+[16/254] E7 isd25_tm40_mix_a3rbt40 r2 ok
+[17/254] E7 isd25_tm40_mix_a3t40 r7 ok
+[18/254] E7 isd25_tm40_mix_a3rbt40 r1 ok
+[19/254] E7 isd25_tm40_mix_a3t40 r8 ok
+[20/254] E7 isd25_tm40_mix_a3t100 r9 ok
+[21/254] E7 isd25_tm40_mix_a3t256 r10 ok
+[22/254] E7 isd25_tm40_mix_a3t40 r2 ok
+[23/254] E7 isd25_tm40_mix_a3t40 r5 ok
+[24/254] E7 isd25_tm40_mix_a3t256 r1 ok
+[25/254] E7 isd25_tm40_mix_a3rbt40 r3 ok
+[26/254] E7 isd25_tm40_mix_a3rbt40 r4 ok
+[27/254] E7 isd25_tm40_mix_a3rbt40 r6 ok
+[28/254] E7 isd25_tm40_mix_a3rbt40 r7 ok
+[29/254] E7 isd25_tm40_mix_a3rbt40 r9 ok
+[30/254] E7 isd25_tm40_mix_a3rbt40 r10 ok
+[31/254] E7 isd25_tm40_mix_a3rbt100 r1 ok
+[32/254] E7 isd25_tm40_mix_a3rbt100 r2 ok
+[33/254] E7 isd25_tm40_mix_a3rbt100 r4 ok
+[34/254] E7 isd25_tm40_mix_a3rbt100 r6 ok
+[35/254] E7 isd25_tm40_mix_a3rbt100 r7 ok
+[36/254] E7 isd25_tm40_mix_a3rbt100 r8 ok
+[37/254] E7 isd25_tm40_mix_a3rbt100 r10 ok
+[38/254] E7 isd25_tm40_mix_og-5.5 r1 ok
+[39/254] E7 isd25_tm40_mix_og-5.5 r8 ok
+[40/254] E7 isd25_tm40_mix_og-5.5 r2 ok
+[41/254] E7 isd25_tm40_mix_og-5.5 r4 ok
+[42/254] E7 isd25_tm40_mix_og-5.5 r5 ok
+[43/254] E7 isd25_tm40_mix_og-5.5 r6 ok
+[44/254] E7 isd25_tm40_mix_og-5.5 r7 ok
+[45/254] E7 isd25_tm40_mix_og-5.5 r9 ok
+[46/254] E7 isd25_tm40_mix_og-5.5 r3 ok
+[47/254] E7 isd25_tm40_mix_og-5.5 r10 ok
+[48/254] E7 isd25_tm40_mix_og-5.5-lite r1 ok
+[49/254] E7 isd25_tm40_mix_og-5.5-lite r2 ok
+[50/254] E7 isd25_tm40_mix_og-5.5-lite r3 ok
+[51/254] E7 isd25_tm40_mix_og-5.5-lite r4 ok
+[52/254] E7 isd25_tm40_mix_og-5.5-lite r5 ok
+[53/254] E7 isd25_tm40_mix_og-5.5-lite r6 ok
+[54/254] E7 isd25_tm40_mix_og-5.5-lite r7 ok
+[55/254] E7 isd25_tm40_mix_og-5.5-lite r8 ok
+[56/254] E7 isd25_tm40_mix_og-5.5-lite r9 ok
+[57/254] E7 isd25_tm200_mix_a3t100 r7 ok
+[58/254] E7 isd25_tm200_mix_a3t100 r1 ok
+[59/254] E7 isd25_tm200_mix_a3t100 r3 ok
+[60/254] E7 isd25_tm200_mix_a3t100 r4 ok
+[61/254] E7 isd25_tm200_mix_a3t100 r5 ok
+[62/254] E7 isd25_tm200_mix_a3t100 r6 ok
+[63/254] E7 isd25_tm40_mix_og-5.5-lite r10 ok
+[64/254] E7 isd25_tm200_mix_a3t100 r8 ok
+[65/254] E7 isd25_tm200_mix_a3t100 r9 ok
+[66/254] E7 isd25_tm200_mix_a3t100 r10 ok
+[67/254] E7 isd25_tm200_mix_og-5.5 r1 ok
+[68/254] E7 isd25_tm200_mix_og-5.5 r2 ok
+[69/254] E7 isd25_tm200_mix_og-5.5 r3 ok
+[70/254] E7 isd25_tm200_mix_og-5.5 r4 ok
+[71/254] E7 isd25_tm200_mix_og-5.5 r5 ok
+[72/254] E7 isd25_tm200_mix_og-5.5 r6 ok
+[73/254] E7 isd25_tm200_mix_og-5.5 r7 ok
+[74/254] E7 isd25_tm200_mix_og-5.5 r8 ok
+[75/254] E7 isd25_tm200_mix_og-5.5 r9 ok
+[76/254] E7 isd25_tm200_mix_og-5.5 r10 ok
+[77/254] E7 isd50_tm40_mix_a3t40 r1 ok
+[78/254] E7 isd50_tm40_mix_a3t40 r2 ok
+[79/254] E7 isd50_tm40_mix_a3t40 r3 ok
+[80/254] E7 isd50_tm40_mix_a3t40 r5 ok
+[81/254] E7 isd50_tm40_mix_a3t100 r3 ok
+[82/254] E7 isd50_tm40_mix_a3t40 r7 ok
+[83/254] E7 isd50_tm40_mix_a3t40 r8 ok
+[84/254] E7 isd50_tm40_mix_a3t40 r10 ok
+[85/254] E7 isd50_tm40_mix_a3t100 r1 ok
+[86/254] E7 isd50_tm40_mix_a3t100 r2 ok
+[87/254] E7 isd50_tm40_mix_a3t100 r9 ok
+[88/254] E7 isd50_tm40_mix_a3t100 r10 ok
+[89/254] E7 isd50_tm40_mix_a3t256 r1 ok
+[90/254] E7 isd50_tm40_mix_a3t100 r5 ok
+[91/254] E7 isd50_tm40_mix_a3t256 r3 ok
+[92/254] E7 isd50_tm40_mix_a3t100 r7 ok
+[93/254] E7 isd50_tm40_mix_a3t100 r8 ok
+[94/254] E7 isd50_tm40_mix_a3t40 r6 ok
+[95/254] E7 isd50_tm40_mix_a3t100 r4 ok
+[96/254] E7 isd50_tm40_mix_a3t256 r2 ok
+[97/254] E7 isd50_tm40_mix_a3t100 r6 ok
+[98/254] E7 isd50_tm40_mix_a3t256 r4 ok
+[99/254] E7 isd50_tm40_mix_a3t256 r5 ok
+[100/254] E7 isd50_tm40_mix_a3t256 r6 ok
+[101/254] FAILED E7 isd50_tm40_mix_a3rbt40 r1: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=1 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd50_tm40_mix_a3rbt40_r1 --isd=50 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=40
+msg="Cannot TX while RX.", +33.364928569s 21 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=834
+NS_FATAL, terminating
+libc++abi: terminating
+
+[102/254] FAILED E7 isd50_tm40_mix_a3t256 r7: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=7 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd50_tm40_mix_a3t256_r7 --isd=50 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=256
+
+[103/254] FAILED E7 isd50_tm40_mix_a3rbt40 r2: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=2 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd50_tm40_mix_a3rbt40_r2 --isd=50 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=40
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +49.140064281s 13 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1228
+NS_FATAL, terminating
+libc++abi: terminating
+
+[104/254] E7 isd50_tm40_mix_a3t256 r9 ok
+[105/254] E7 isd50_tm40_mix_a3rbt40 r3 ok
+[106/254] E7 isd50_tm40_mix_a3t256 r8 ok
+[107/254] E7 isd50_tm40_mix_a3t256 r10 ok
+[108/254] E7 isd50_tm40_mix_a3rbt40 r4 ok
+[109/254] E7 isd50_tm40_mix_a3rbt40 r5 ok
+[110/254] E7 isd50_tm40_mix_a3rbt40 r6 ok
+[111/254] E7 isd50_tm40_mix_a3rbt40 r7 ok
+[112/254] E7 isd50_tm40_mix_a3rbt40 r10 ok
+[113/254] E7 isd50_tm40_mix_a3rbt40 r9 ok
+[114/254] E7 isd50_tm40_mix_a3rbt40 r8 ok
+[115/254] E7 isd50_tm40_mix_a3rbt100 r1 ok
+[116/254] E7 isd50_tm40_mix_a3rbt100 r2 ok
+[117/254] E7 isd50_tm40_mix_a3rbt100 r3 ok
+[118/254] E7 isd50_tm40_mix_a3rbt100 r4 ok
+[119/254] E7 isd50_tm40_mix_a3rbt100 r7 ok
+[120/254] E7 isd50_tm40_mix_a3rbt100 r6 ok
+[121/254] E7 isd50_tm40_mix_a3rbt100 r5 ok
+[122/254] E7 isd50_tm40_mix_a3rbt100 r8 ok
+[123/254] E7 isd50_tm40_mix_a3rbt100 r9 ok
+[124/254] E7 isd50_tm40_mix_a3rbt100 r10 ok
+[125/254] E7 isd50_tm40_mix_og-5.5 r1 ok
+[126/254] E7 isd50_tm40_mix_og-5.5 r2 ok
+[127/254] E7 isd50_tm40_mix_og-5.5 r4 ok
+[128/254] E7 isd50_tm40_mix_og-5.5 r3 ok
+[129/254] E7 isd50_tm40_mix_og-5.5 r5 ok
+[130/254] E7 isd50_tm40_mix_og-5.5 r6 ok
+[131/254] E7 isd50_tm40_mix_og-5.5 r7 ok
+[132/254] E7 isd50_tm40_mix_og-5.5 r8 ok
+[133/254] E7 isd50_tm40_mix_og-5.5 r10 ok
+[134/254] E7 isd50_tm40_mix_og-5.5 r9 ok
+[135/254] E7 isd50_tm40_mix_og-5.5-lite r1 ok

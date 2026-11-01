@@ -1,0 +1,24 @@
+22 aborted runs
+truncated E7_isd25_tm40_mix_a3t40_r1 to 24.4 s
+truncated E7_isd25_tm40_mix_a3t40_r6 to 38.6 s
+replaced E7_isd25_tm40_mix_a3t100_r3 by seed 11
+replaced E7_isd25_tm40_mix_a3t40_r9 by seed 11
+truncated E7_isd25_tm40_mix_a3t100_r7 to 47.8 s
+truncated E7_isd25_tm40_mix_a3t100_r10 to 28.8 s
+replaced E7_isd25_tm40_mix_a3t256_r5 by seed 11
+replaced E7_isd25_tm40_mix_a3t256_r7 by seed 12
+replaced E7_isd25_tm40_mix_a3rbt40_r5 by seed 11
+replaced E7_isd25_tm40_mix_a3rbt40_r8 by seed 12
+truncated E7_isd25_tm40_mix_a3rbt100_r3 to 36.4 s
+replaced E7_isd25_tm40_mix_a3rbt100_r9 by seed 11
+truncated E7_isd25_tm40_mix_a3rbt100_r5 to 52.1 s
+replaced E7_isd25_tm200_mix_a3t100_r2 by seed 11
+truncated E7_isd50_tm40_mix_a3t40_r4 to 22.3 s
+truncated E7_isd50_tm40_mix_a3t40_r9 to 25.3 s
+truncated E7_isd50_tm40_mix_a3rbt40_r1 to 33.2 s
+replaced E7_isd50_tm40_mix_a3t256_r7 by seed 11
+truncated E7_isd50_tm40_mix_a3rbt40_r2 to 49.0 s
+truncated E7_isd50_tm200_mix_a3t100_r4 to 42.0 s
+replaced E7_isd100_tm40_mix_a3rbt40_r3 by seed 11
+replaced E7_isd100_tm40_mix_og-5.5-lite_r6 by seed 11
+ALL-DONE

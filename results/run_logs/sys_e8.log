@@ -1,0 +1,66 @@
+60 runs
+[1/60] FAILED E8 isd25_tm40_mix_a3t40-ro10 r3: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=20 --warm=2 --run=3 --prefix=~/ns-3.48-nr/results/sys/raw/E8_isd25_tm40_mix_a3t40-ro10_r3 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40 --rlcReorderMs=10
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +18.020064281s 12 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1228
+NS_FATAL, terminating
+libc++abi: terminating
+
+[2/60] E8 isd25_tm40_mix_a3t100-ro10 r1 ok
+[3/60] E8 isd25_tm40_mix_a3t40-ro10 r5 ok
+[4/60] E8 isd25_tm40_mix_a3t40-ro10 r1 ok
+[5/60] E8 isd25_tm40_mix_a3t40-ro10 r2 ok
+[6/60] E8 isd25_tm40_mix_a3t40-ro10 r4 ok
+[7/60] E8 isd25_tm40_mix_a3t100-ro10 r2 ok
+[8/60] E8 isd25_tm40_mix_og-5.5-ro10 r1 ok
+[9/60] E8 isd25_tm40_mix_og-5.5-ro10 r3 ok
+[10/60] E8 isd25_tm40_mix_og-5.5-ro10 r2 ok
+[11/60] E8 isd25_tm40_mix_a3t100-ro10 r4 ok
+[12/60] E8 isd25_tm40_mix_og-5.5-ro10 r4 ok
+[13/60] E8 isd25_tm40_mix_a3t100-ro10 r3 ok
+[14/60] E8 isd25_tm40_mix_a3t100-ro10 r5 ok
+[15/60] E8 isd25_tm40_mix_og-5.5-ro10 r5 ok
+[16/60] E8 isd25_tm40_mix_og-5.5-lite-ro10 r1 ok
+[17/60] E8 isd50_tm40_mix_a3t40-ro10 r1 ok
+[18/60] E8 isd25_tm40_mix_og-5.5-lite-ro10 r2 ok
+[19/60] E8 isd25_tm40_mix_og-5.5-lite-ro10 r3 ok
+[20/60] E8 isd25_tm40_mix_og-5.5-lite-ro10 r4 ok
+[21/60] E8 isd25_tm40_mix_og-5.5-lite-ro10 r5 ok
+[22/60] E8 isd50_tm40_mix_a3t40-ro10 r2 ok
+[23/60] E8 isd50_tm40_mix_a3t40-ro10 r3 ok
+[24/60] E8 isd50_tm40_mix_a3t40-ro10 r4 ok
+[25/60] E8 isd50_tm40_mix_a3t100-ro10 r3 ok
+[26/60] E8 isd50_tm40_mix_a3t40-ro10 r5 ok
+[27/60] E8 isd50_tm40_mix_a3t100-ro10 r1 ok
+[28/60] E8 isd50_tm40_mix_a3t100-ro10 r2 ok
+[29/60] E8 isd50_tm40_mix_a3t100-ro10 r4 ok
+[30/60] E8 isd50_tm40_mix_a3t100-ro10 r5 ok
+[31/60] E8 isd50_tm40_mix_og-5.5-ro10 r2 ok
+[32/60] E8 isd50_tm40_mix_og-5.5-ro10 r1 ok
+[33/60] E8 isd50_tm40_mix_og-5.5-ro10 r3 ok
+[34/60] E8 isd50_tm40_mix_og-5.5-ro10 r4 ok
+[35/60] E8 isd50_tm40_mix_og-5.5-ro10 r5 ok
+[36/60] E8 isd50_tm40_mix_og-5.5-lite-ro10 r1 ok
+[37/60] E8 isd100_tm40_mix_a3t40-ro10 r1 ok
+[38/60] E8 isd50_tm40_mix_og-5.5-lite-ro10 r4 ok
+[39/60] E8 isd50_tm40_mix_og-5.5-lite-ro10 r3 ok
+[40/60] E8 isd50_tm40_mix_og-5.5-lite-ro10 r2 ok
+[41/60] E8 isd50_tm40_mix_og-5.5-lite-ro10 r5 ok
+[42/60] E8 isd100_tm40_mix_a3t40-ro10 r2 ok
+[43/60] E8 isd100_tm40_mix_a3t40-ro10 r3 ok
+[44/60] E8 isd100_tm40_mix_a3t40-ro10 r4 ok
+[45/60] E8 isd100_tm40_mix_a3t40-ro10 r5 ok
+[46/60] E8 isd100_tm40_mix_a3t100-ro10 r3 ok
+[47/60] E8 isd100_tm40_mix_a3t100-ro10 r1 ok
+[48/60] E8 isd100_tm40_mix_a3t100-ro10 r2 ok
+[49/60] E8 isd100_tm40_mix_a3t100-ro10 r4 ok
+[50/60] E8 isd100_tm40_mix_og-5.5-ro10 r1 ok
+[51/60] E8 isd100_tm40_mix_og-5.5-ro10 r3 ok
+[52/60] E8 isd100_tm40_mix_og-5.5-ro10 r2 ok
+[53/60] E8 isd100_tm40_mix_a3t100-ro10 r5 ok
+[54/60] E8 isd100_tm40_mix_og-5.5-ro10 r4 ok
+[55/60] E8 isd100_tm40_mix_og-5.5-ro10 r5 ok
+[56/60] E8 isd100_tm40_mix_og-5.5-lite-ro10 r1 ok
+[57/60] E8 isd100_tm40_mix_og-5.5-lite-ro10 r3 ok
+[58/60] E8 isd100_tm40_mix_og-5.5-lite-ro10 r2 ok
+[59/60] E8 isd100_tm40_mix_og-5.5-lite-ro10 r4 ok
+[60/60] E8 isd100_tm40_mix_og-5.5-lite-ro10 r5 ok
+wrote E8 59

@@ -1,0 +1,168 @@
+270 runs
+[1/270] FAILED E7 isd25_tm40_mix_a3t40 r1: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=1 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t40_r1 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +24.500064281s 3 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1228
+NS_FATAL, terminating
+libc++abi: terminating
+
+[2/270] FAILED E7 isd25_tm40_mix_a3t40 r6: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=6 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t40_r6 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +38.717564550s 2 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1064
+NS_FATAL, terminating
+libc++abi: terminating
+
+[3/270] E7 isd25_tm40_mix_a3t40 r2 ok
+[4/270] E7 isd25_tm40_mix_a3t40 r3 ok
+[5/270] E7 isd25_tm40_mix_a3t40 r4 ok
+[6/270] E7 isd25_tm40_mix_a3t40 r7 ok
+[7/270] E7 isd25_tm40_mix_a3t40 r5 ok
+[8/270] FAILED E7 isd25_tm40_mix_a3t100 r3: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=3 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t100_r3 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=100
+
+[9/270] FAILED E7 isd25_tm40_mix_a3t40 r9: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=9 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t40_r9 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40
+
+[10/270] E7 isd25_tm40_mix_a3t40 r8 ok
+[11/270] E7 isd25_tm40_mix_a3t40 r10 ok
+[12/270] E7 isd25_tm40_mix_a3t100 r1 ok
+[13/270] E7 isd25_tm40_mix_a3t100 r4 ok
+[14/270] E7 isd25_tm40_mix_a3t100 r2 ok
+[15/270] FAILED E7 isd25_tm40_mix_a3t100 r7: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=7 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t100_r7 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=100
+msg="method unexpected in state CONNECTED_HANDOVER", +47.960421425s 46 file=~/ns-3.48-nr/contrib/nr/model/nr-ue-rrc.cc, line=1461
+NS_FATAL, terminating
+libc++abi: terminating
+
+[16/270] E7 isd25_tm40_mix_a3t100 r5 ok
+[17/270] E7 isd25_tm40_mix_a3t100 r6 ok
+[18/270] FAILED E7 isd25_tm40_mix_a3t100 r10: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=10 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t100_r10 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=100
+msg="Cannot TX while RX.", +28.944928569s 38 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=834
+NS_FATAL, terminating
+libc++abi: terminating
+
+[19/270] FAILED E7 isd25_tm40_mix_a3t256 r5: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=5 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t256_r5 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=256
+
+[20/270] E7 isd25_tm40_mix_a3t100 r8 ok
+[21/270] E7 isd25_tm40_mix_a3t100 r9 ok
+[22/270] E7 isd25_tm40_mix_a3t256 r1 ok
+[23/270] FAILED E7 isd25_tm40_mix_a3t256 r7: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=7 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3t256_r7 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=256
+msg="method unexpected in state HANDOVER_JOINING", +16.100064281s 11 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1228
+NS_FATAL, terminating
+libc++abi: terminating
+
+[24/270] E7 isd25_tm40_mix_a3t256 r2 ok
+[25/270] E7 isd25_tm40_mix_a3t256 r3 ok
+[26/270] E7 isd25_tm40_mix_a3t256 r4 ok
+[27/270] E7 isd25_tm40_mix_a3t256 r6 ok
+[28/270] E7 isd25_tm40_mix_a3t256 r8 ok
+[29/270] E7 isd25_tm40_mix_a3t256 r9 ok
+[30/270] E7 isd25_tm40_mix_a3rbt40 r1 ok
+[31/270] FAILED E7 isd25_tm40_mix_a3rbt40 r5: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=5 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3rbt40_r5 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=40
+msg="method unexpected in state CONNECTION_SETUP", +16.527564493s 3 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1088
+NS_FATAL, terminating
+libc++abi: terminating
+
+[32/270] E7 isd25_tm40_mix_a3t256 r10 ok
+[33/270] E7 isd25_tm40_mix_a3rbt40 r3 ok
+[34/270] E7 isd25_tm40_mix_a3rbt40 r2 ok
+[35/270] E7 isd25_tm40_mix_a3rbt40 r4 ok
+[36/270] FAILED E7 isd25_tm40_mix_a3rbt40 r8: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=8 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3rbt40_r8 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=40
+
+[37/270] E7 isd25_tm40_mix_a3rbt40 r6 ok
+[38/270] E7 isd25_tm40_mix_a3rbt40 r7 ok
+[39/270] FAILED E7 isd25_tm40_mix_a3rbt100 r3: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=3 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3rbt100_r3 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=100
+msg="Cannot TX while RX.", +36.547428569s 22 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=834
+NS_FATAL, terminating
+libc++abi: terminating
+
+[40/270] E7 isd25_tm40_mix_a3rbt40 r9 ok
+[41/270] E7 isd25_tm40_mix_a3rbt40 r10 ok
+[42/270] E7 isd25_tm40_mix_a3rbt100 r1 ok
+[43/270] FAILED E7 isd25_tm40_mix_a3rbt100 r9: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=9 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3rbt100_r9 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=100
+msg="Cannot TX while RX.", +11.512428569s 20 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=834
+NS_FATAL, terminating
+libc++abi: terminating
+
+[44/270] E7 isd25_tm40_mix_a3rbt100 r2 ok
+[45/270] E7 isd25_tm40_mix_a3rbt100 r4 ok
+[46/270] FAILED E7 isd25_tm40_mix_a3rbt100 r5: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=5 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm40_mix_a3rbt100_r5 --isd=25 --tm=40 --speeds=3,30,60,120 --policy=a3rb --ttt=100
+msg="Cannot TX while RX.", +52.284928569s 29 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=834
+NS_FATAL, terminating
+libc++abi: terminating
+
+[47/270] E7 isd25_tm40_mix_a3rbt100 r7 ok
+[48/270] E7 isd25_tm40_mix_a3rbt100 r6 ok
+[49/270] E7 isd25_tm40_mix_a3rbt100 r8 ok
+[50/270] E7 isd25_tm40_mix_og-5.5 r1 ok
+[51/270] E7 isd25_tm40_mix_a3rbt100 r10 ok
+[52/270] E7 isd25_tm40_mix_og-5.5 r2 ok
+[53/270] E7 isd25_tm40_mix_og-5.5 r3 ok
+[54/270] E7 isd25_tm40_mix_og-5.5 r4 ok
+[55/270] E7 isd25_tm40_mix_og-5.5 r5 ok
+[56/270] E7 isd25_tm40_mix_og-5.5 r6 ok
+[57/270] E7 isd25_tm40_mix_og-5.5 r7 ok
+[58/270] E7 isd25_tm40_mix_og-5.5 r8 ok
+[59/270] E7 isd25_tm40_mix_og-5.5 r9 ok
+[60/270] E7 isd25_tm40_mix_og-5.5 r10 ok
+[61/270] E7 isd25_tm40_mix_og-5.5-lite r1 ok
+[62/270] E7 isd25_tm40_mix_og-5.5-lite r2 ok
+[63/270] E7 isd25_tm40_mix_og-5.5-lite r3 ok
+[64/270] E7 isd25_tm40_mix_og-5.5-lite r4 ok
+[65/270] E7 isd25_tm40_mix_og-5.5-lite r5 ok
+[66/270] FAILED E7 isd25_tm200_mix_a3t100 r2: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=2 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd25_tm200_mix_a3t100_r2 --isd=25 --tm=200 --speeds=3,30,60,120 --policy=a3 --ttt=100
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +15.220064281s 4 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1228
+NS_FATAL, terminating
+libc++abi: terminating
+
+[67/270] E7 isd25_tm40_mix_og-5.5-lite r6 ok
+[68/270] E7 isd25_tm40_mix_og-5.5-lite r7 ok
+[69/270] E7 isd25_tm40_mix_og-5.5-lite r8 ok
+[70/270] E7 isd25_tm40_mix_og-5.5-lite r9 ok
+[71/270] E7 isd25_tm40_mix_og-5.5-lite r10 ok
+[72/270] E7 isd25_tm200_mix_a3t100 r1 ok
+[73/270] E7 isd25_tm200_mix_a3t100 r3 ok
+[74/270] E7 isd25_tm200_mix_a3t100 r4 ok
+[75/270] E7 isd25_tm200_mix_a3t100 r5 ok
+[76/270] E7 isd25_tm200_mix_a3t100 r6 ok
+[77/270] E7 isd25_tm200_mix_a3t100 r8 ok
+[78/270] E7 isd25_tm200_mix_a3t100 r7 ok
+[79/270] E7 isd25_tm200_mix_a3t100 r9 ok
+[80/270] E7 isd25_tm200_mix_og-5.5 r1 ok
+[81/270] E7 isd25_tm200_mix_og-5.5 r2 ok
+[82/270] E7 isd25_tm200_mix_a3t100 r10 ok
+[83/270] E7 isd25_tm200_mix_og-5.5 r3 ok
+[84/270] E7 isd25_tm200_mix_og-5.5 r4 ok
+[85/270] E7 isd25_tm200_mix_og-5.5 r5 ok
+[86/270] E7 isd25_tm200_mix_og-5.5 r6 ok
+[87/270] E7 isd25_tm200_mix_og-5.5 r7 ok
+[88/270] E7 isd25_tm200_mix_og-5.5 r8 ok
+[89/270] E7 isd25_tm200_mix_og-5.5 r9 ok
+[90/270] E7 isd50_tm40_mix_a3t40 r1 ok
+[91/270] FAILED E7 isd50_tm40_mix_a3t40 r4: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=4 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd50_tm40_mix_a3t40_r4 --isd=50 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40
+msg="method unexpected in state CONNECTION_RECONFIGURATION", +22.425064550s 2 file=~/ns-3.48-nr/contrib/nr/model/nr-gnb-rrc.cc, line=1064
+NS_FATAL, terminating
+libc++abi: terminating
+
+[92/270] E7 isd25_tm200_mix_og-5.5 r10 ok
+[93/270] E7 isd50_tm40_mix_a3t40 r2 ok
+[94/270] FAILED E7 isd50_tm40_mix_a3t40 r9: ~/ns-3.48-nr/build/scratch/ns3.48-nr-udn-handover-v3-optimized --gridN=4 --simTime=60 --warm=2 --run=9 --prefix=~/ns-3.48-nr/results/sys/raw/E7_isd50_tm40_mix_a3t40_r9 --isd=50 --tm=40 --speeds=3,30,60,120 --policy=a3 --ttt=40
+msg="Cannot TX while RX.", +25.407999992s 46 file=~/ns-3.48-nr/contrib/nr/model/nr-spectrum-phy.cc, line=1014
+NS_FATAL, terminating
+libc++abi: terminating
+
+[95/270] E7 isd50_tm40_mix_a3t40 r3 ok
+[96/270] E7 isd50_tm40_mix_a3t40 r5 ok
+[97/270] E7 isd50_tm40_mix_a3t40 r6 ok
+[98/270] E7 isd50_tm40_mix_a3t40 r7 ok
+[99/270] E7 isd50_tm40_mix_a3t40 r8 ok
+[100/270] E7 isd50_tm40_mix_a3t40 r10 ok
+[101/270] E7 isd50_tm40_mix_a3t100 r1 ok
+[102/270] E7 isd50_tm40_mix_a3t100 r2 ok
+[103/270] E7 isd50_tm40_mix_a3t100 r3 ok
+[104/270] E7 isd50_tm40_mix_a3t100 r4 ok
+[105/270] E7 isd50_tm40_mix_a3t100 r5 ok
+[106/270] E7 isd50_tm40_mix_a3t100 r6 ok
+[107/270] E7 isd50_tm40_mix_a3t100 r7 ok
+[108/270] E7 isd50_tm40_mix_a3t100 r8 ok
+[109/270] E7 isd50_tm40_mix_a3t100 r9 ok
+[110/270] E7 isd50_tm40_mix_a3t100 r10 ok
+[111/270] E7 isd50_tm40_mix_a3t256 r1 ok
+[112/270] E7 isd50_tm40_mix_a3t256 r2 ok
+[113/270] E7 isd50_tm40_mix_a3t256 r3 ok
+[114/270] E7 isd50_tm40_mix_a3t256 r4 ok
+[115/270] E7 isd50_tm40_mix_a3t256 r5 ok
