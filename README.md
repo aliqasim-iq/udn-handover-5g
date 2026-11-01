@@ -3,7 +3,7 @@
 ## tlmc/ — decision-delay model and trigger-level Monte-Carlo (TL-MC) simulator
 - `model/udn_model.py` analytical model; `model/tl_mc.py` simulator; `model/run_all.py` experiments
   (`SEEDS=10 PROCS=4 python3 run_all.py kappa|val|scheme|sg|pp3|sens|lite`, needs numpy + scipy)
-- `model/res_*.json` raw results used in Sections 4–6; `figs/*.py` regenerate Figures 1–6
+- `model/res_*.json` raw results used in Sections 4–6; `figs/*.py` regenerate Figures 1–5 (`tlmc/figs/fig1`–`fig5`)
 
 ## ns3_5g-lena/ — system-level evaluation (Section 7)
 - Requires ns-3.48 + 5G-LENA v5.0 (commit 47a3adc). Copy the `.cc/.py` files into `scratch/`.
@@ -13,13 +13,31 @@
 - `nr-udn-rerun.py`: re-runs runs aborted by 5G-LENA (same seed truncated before the abort, or a new seed)
 - `nr-udn-experiments.py`: run matrix E1–E4, E6 (OG-A3-lite), E7 (10 seeds x 60 s scheme comparison) and E8 (RLC t-Reordering 10 ms) (resumable, safe to run several instances)
   e.g. `python3 scratch/nr-udn-experiments.py --sets E4 --procs 4 --seeds 5 --ogThr -5.5 --ogCal -2.5`
-- `run_e5.sh`: light-load experiment E5; `nr-udn-analysis.py`: statistics (`sys_stats.json`) and Figures 7–10
+- `run_e5.sh`: light-load experiment E5; `nr-udn-analysis.py`: statistics (`sys_stats.json`) and the system-level figures (`tlmc/figs/fig7`–`fig11`, see the mapping below)
 
 ## results/
 - `5g-lena_raw/`: per-run summaries and per-HO records of all 5G-LENA runs
 - `calibration_runs/`, `calib.json`: guard-threshold calibration (seeds 101–103, not used for evaluation)
 - `sys_stats.json`: aggregated system-level statistics (mean, 95% CI)
 - `run_logs/`: runner logs of E7/E8, including the aborted runs and how they were re-run
+
+## Figures
+`figures_paper/` holds the eight figures exactly as they appear in the article. The scripts write
+their output to `tlmc/figs/` under the working names below.
+
+| Article | Working file in `tlmc/figs/` | Script |
+|---|---|---|
+| Fig. 1 | `fig1_topology.png` | `fig_schematics.py` |
+| Fig. 2 | `fig2_timeline.png` | `fig_schematics.py` |
+| Fig. 3 | `fig3_validation.png` | `fig_model.py` |
+| Fig. 4 | `fig4_kappa.png` | `fig_model.py` |
+| Fig. 5 | `fig5_tradeoff.png` | `fig_schemes.py` |
+| Fig. 6 | `fig10_sys_validation.png` | `nr-udn-analysis.py` |
+| Fig. 7 | `fig11_sys_radio_kappa.png` | `nr-udn-analysis.py` |
+| Fig. 8 | `fig7_sys_density.png` | `nr-udn-analysis.py` |
+
+`fig6_speed.png`, `fig8_sys_speed_ttt.png` and `fig9_sys_schemes.png` are additional figures that
+are not part of the article.
 
 ## License
 - Python scripts, results and figures: MIT (see `LICENSE`).
