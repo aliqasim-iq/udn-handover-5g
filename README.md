@@ -1,4 +1,4 @@
-# Supplementary material — "Why Handovers Interrupt Service in Ultra-Dense 5G Networks"
+# Supplementary material — "Decision Delay and Pre-Handover Service Gaps in Ultra-Dense 5G Networks: An Analytical Model and an Outage-Guarded A3 Trigger"
 
 ## tlmc/ — decision-delay model and trigger-level Monte-Carlo (TL-MC) simulator
 - `model/udn_model.py` analytical model; `model/tl_mc.py` simulator; `model/run_all.py` experiments
@@ -28,4 +28,4 @@
 
 ## Citation
 If you use this code or data, please cite the article
-"Why Handovers Interrupt Service in Ultra-Dense 5G Networks" (submitted to *Computer Communications*).
+"Decision Delay and Pre-Handover Service Gaps in Ultra-Dense 5G Networks: An Analytical Model and an Outage-Guarded A3 Trigger" (submitted to *Computer Communications*).
