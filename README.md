@@ -21,6 +21,23 @@
 - `sys_stats.json`: aggregated system-level statistics (mean, 95% CI)
 - `run_logs/`: runner logs of E7/E8, including the aborted runs and how they were re-run
 
+## Result tags
+The TL-MC result files (`tlmc/model/res_*.json`) and the 5G-LENA run names use short tags:
+
+| Tag | Article name |
+|---|---|
+| `fixed40`, `fixed100`, ... / `a3t40`, `a3t100`, ... | A3 with a fixed TTT of 40, 100, ... ms |
+| `fixed100_nr` / `a3rbt40`, `a3rbt100` | A3 + RB |
+| `mse` | MSE (oracle) |
+| `ga` | MB-TTT, Eq. (19) |
+| `og` / `og-5.5` | OG-A3 (guard threshold -5.5 dB) |
+| `og_adapt` | OG-A3-adaptive, Eq. (20) |
+| `og_nonr` | OG-A3-noRB |
+| `og_lite` / `og-5.5-lite` | OG-A3-lite |
+| `og_cho`, `og_ltm`, `ltm_fixed100` | OG-A3 + CHO-like, OG-A3 + LTM-like, LTM-like A3-100 |
+| `og-2.5` | OG-A3 with the calibrated -2.5 dB threshold (E4 sensitivity point) |
+| `-ro10` | RLC-UM t-Reordering 10 ms (E8) |
+
 ## Figures
 `figures_paper/` holds the eight figures exactly as they appear in the article. The scripts write
 their output to `tlmc/figs/` under the working names below.

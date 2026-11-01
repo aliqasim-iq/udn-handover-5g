@@ -60,17 +60,17 @@ def run(D=50.0, speeds_kmh=(30,), ttt=0.1, hys=3.0, Tm=0.04, k=4,
     s_los, s_nlos = 4.0, 7.82
 
     # per-UE TTT
-    # SINR guard (SG-A3): fast L1 SINR/RSRP averages (EMA over g_tavg)
+    # SINR guard of OG-A3 (Section 5.2): fast L1 SINR/RSRP averages (EMA over g_tavg)
     ga_ = min(1.0, dt / g_tavg)
     sinr_f = None; rsrp_f = None
     if guard and g_adapt:
-        # speed-aware guard threshold (Eq. 30): gamma_g = gamma_min + s_hat*(T_g + T_prep)
+        # speed-aware guard threshold (Eq. 20, margin m = 0.5 dB): gamma_g = gamma_min + s_hat*(T_g + T_prep) + m
         thr_ue = gamma_min + g_slope * v * (g_tavg + t_prep) + 0.5
     else:
         thr_ue = np.full(n_ue, g_thr)
     if policy == "fixed":
         ttt_ue = np.full(n_ue, ttt)
-    elif policy == "ga":
+    elif policy == "ga":    # MB-TTT, Eq. (19)
         vh = v * (1 + speed_err * rng.standard_normal(n_ue))
         ttt_ue = np.array([um.ga_ttt_kappa(x, kappa_q, Tm, t_prep, k, l3)
                            for x in vh])

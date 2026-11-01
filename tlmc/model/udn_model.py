@@ -1,9 +1,11 @@
 """
 Analytical model of the pre-handover service gap (T_pre) in ultra-dense
-small-cell networks, and the gradient-aware time-to-trigger (GA-TTT) rule.
+small-cell networks, and the model-based time-to-trigger (MB-TTT) rule.
+Equation numbers refer to the article; functions marked "not used in the
+article" are kept from an earlier version of the analysis.
 
 All quantities in SI units (m, s) unless stated; powers in dB.
-Notation follows the manuscript (Section 4).
+Notation follows the article (Sections 4 and 5).
 """
 import numpy as np
 from scipy.stats import norm
@@ -17,7 +19,7 @@ NR_TTT_MS = np.array([0, 40, 64, 80, 100, 128, 160, 256, 320, 480, 512, 640,
 def gradient(D, y=0.0, alpha=2.1, dh=8.5):
     """Spatial gradient (dB/m) of the mean RSRP difference across the
     equal-power boundary of two sites separated by D, at offset y along
-    the boundary (Eq. 10)."""
+    the boundary (Eq. 17)."""
     L = D / 2.0
     return (20.0 * alpha / LN10) * L / (L ** 2 + y ** 2 + dh ** 2)
 
@@ -34,13 +36,13 @@ def gradient_eff(D, y=0.0, dh=8.5, fc_ghz=3.5, h=0.01):
 
 def gradient_harmonic(D, alpha=2.1, dh=8.5):
     """1 / E_y[1/g] for crossings uniform along a square-grid edge of
-    length D (Eq. 11)."""
+    length D (Section 4.3)."""
     L = D / 2.0
     return 20.0 * alpha * L / (LN10 * (4.0 * L ** 2 / 3.0 + dh ** 2))
 
 
 def steepest_isd(dh=8.5):
-    """ISD that maximises the harmonic-mean gradient (Eq. 12)."""
+    """ISD that maximises the harmonic-mean gradient (Section 4.3)."""
     return np.sqrt(3.0) * dh
 
 
@@ -57,7 +59,7 @@ def pr_los(d2d):
 
 def pl_eff(d2d, dh=8.5, fc_ghz=3.5):
     """Mean (LOS-probability-weighted, linear domain) UMi-SC path loss in dB,
-    used by the deterministic model (Eq. 9)."""
+    built from Eqs. (1)-(3), used by the deterministic setting (Section 4.4)."""
     d3 = np.sqrt(d2d ** 2 + dh ** 2)
     pll = pl_los(d3, fc_ghz)
     pln = np.maximum(pll, 35.3 * np.log10(d3) + 22.4 + 21.3 * np.log10(fc_ghz))
@@ -87,7 +89,7 @@ def rho_interference(D, y=0.0, eta=1.0, R=6, dh=8.5, fc_ghz=3.5,
 
 def delta_out(rho, gamma_min_db=-6.0, eta=1.0):
     """RSRP difference (neighbour minus serving, dB) at which the serving
-    SINR falls below gamma_min (Eq. 14); the neighbour (target) cell
+    SINR falls below gamma_min (Eq. 18); the neighbour (target) cell
     interferes with activity factor eta. Returns -inf for a coverage hole."""
     arg = (10 ** (-gamma_min_db / 10.0) - rho) / eta
     return np.where(arg > 0, 10 * np.log10(np.maximum(arg, 1e-30)), -np.inf)
@@ -95,14 +97,14 @@ def delta_out(rho, gamma_min_db=-6.0, eta=1.0):
 
 # ---------------------------------------------------------------- delays
 def decision_delay(Tm, ttt, t_prep, k=4):
-    """T_D = T_m / a + T_TTT + T_prep (Eq. 17) with a = 2^(-k/4)."""
+    """Mean decision delay T_D = T_m / a + T_TTT + T_prep (Eq. 12) with a = 2^(-k/4)."""
     a = 2.0 ** (-k / 4.0)
     return Tm / a + ttt + t_prep
 
 
 # ---------------------------------------------------------------- T_pre
 def phi(c0):
-    """Normalised mean pre-HO gap phi(c0) (Eq. 20)."""
+    """Normalised mean pre-HO gap phi(c0); not used in the article."""
     c0 = np.asarray(c0, dtype=float)
     out = np.zeros_like(c0)
     neg = c0 <= 0
@@ -115,8 +117,9 @@ def phi(c0):
 
 def mean_tpre_det(v, D, Hys, T_D, dout, alpha=None, dh=8.5, ny=41):
     """Mean pre-HO gap of the drift-only model, averaged over the crossing
-    angle (closed form, Eq. 19-20) and numerically over the crossing point
-    along the edge. dout may be an array over y (same length as ny)."""
+    angle (closed form) and numerically over the crossing point along the
+    edge. dout may be an array over y (same length as ny). Not used in the
+    article."""
     ys = np.linspace(-D / 2, D / 2, ny)
     g = (gradient(D, ys, alpha, dh) if alpha else gradient_eff(D, ys, dh))
     dout = np.broadcast_to(dout, ys.shape)
@@ -126,18 +129,18 @@ def mean_tpre_det(v, D, Hys, T_D, dout, alpha=None, dh=8.5, ny=41):
 
 def critical_speed(D, Hys, T_D, dout, alpha=2.1, dh=8.5):
     """Speed above which a perpendicular crossing at the edge midpoint
-    suffers a pre-HO gap (Eq. 21)."""
+    suffers a pre-HO gap (gradient form of Eq. 15; not used in the article)."""
     return (dout - Hys) / (gradient(D, 0.0, alpha, dh) * T_D)
 
 
 def tail_prob(t, T_D, K):
     """P(T_pre > t) in the margin-limited regime (Hys > Delta_out),
-    K = (Hys - Delta_out)/(g v) (Eq. 22)."""
+    K = (Hys - Delta_out)/(g v). Not used in the article."""
     x = (t - T_D) / K
     return np.where(x <= 1, 1.0, 1 - np.sqrt(1 - 1 / np.maximum(x, 1) ** 2))
 
 
-# --------------------------------------------- drift-diffusion extension
+# ------------------- drift-diffusion extension (not used in the article)
 def fp_cdf(t, m, mu, beta):
     """P(first passage of level m>0 by Brownian motion with drift mu and
     variance rate beta occurs before t) (inverse-Gaussian CDF)."""
@@ -150,7 +153,7 @@ def fp_cdf(t, m, mu, beta):
 
 def mean_tpre_dd(v, D, Hys, T_D, dout, sigma, dc, alpha=2.1, dh=8.5,
                  ny=21, nth=41, nt=200):
-    """Mean pre-HO gap of the drift-diffusion model (Eq. 24):
+    """Mean pre-HO gap of the drift-diffusion model:
     E[(T_D - tau)^+] = int_0^T_D P(tau <= t) dt, averaged over the
     flux-weighted crossing angle and the crossing point."""
     beta = 4.0 * sigma ** 2 * v / dc       # variance rate of shadowing diff.
@@ -173,12 +176,12 @@ def mean_tpre_dd(v, D, Hys, T_D, dout, sigma, dc, alpha=2.1, dh=8.5,
     return res / len(ys)
 
 
-# ---------------------------------------------------------------- GA-TTT
+# ---------------------------------------------------------------- MB-TTT
 def ga_ttt(v_hat, D, Hys, Tm, t_prep, dout, margin=1.0, k=4, alpha=2.1,
            dh=8.5, ttt_set_ms=NR_TTT_MS, ttt_cap_ms=640):
-    """Gradient-aware TTT (Algorithm 1): the largest standard TTT such that
-    a perpendicular crossing reaches the HO command before the serving
-    link enters outage, keeping a safety margin (dB)."""
+    """Gradient-based TTT: the largest standard TTT such that a perpendicular
+    crossing reaches the HO command before the serving link enters outage,
+    keeping a safety margin (dB). Not used in the article (see ga_ttt_kappa)."""
     a = 2.0 ** (-k / 4.0)
     s = gradient_harmonic(D, alpha, dh) * max(v_hat, 0.1)
     ttt_max = (dout - margin - Hys) / s - (Tm / a + t_prep)
@@ -189,7 +192,7 @@ def ga_ttt(v_hat, D, Hys, Tm, t_prep, dout, margin=1.0, k=4, alpha=2.1,
 # ------------------------------------------- conditional (per-crossing) model
 def tpre_conditional(K, Tm, ttt, t_prep, k=4):
     """Mean pre-HO gap for a crossing with outage margin time K (s),
-    averaged over the uniform phase of the measurement grid (Eq. 19):
+    averaged over the uniform phase of the measurement grid (Eq. 14):
     E_U[(T_D0 + U*T_m - K)^+], T_D0 = T_m(1/a - 1/2) + T_TTT + T_prep."""
     a = 2.0 ** (-k / 4.0)
     A = Tm * (1 / a - 0.5) + ttt + t_prep - K - 0.0  # = T_D0 - K
@@ -207,9 +210,9 @@ def outage_margin_time(D, y, vperp, Hys, eta=0.5, gamma_min=-6.0, dh=8.5):
 
 def ga_ttt_kappa(v_hat, kappa_q, Tm, t_prep, k=4, l3=True,
                  ttt_set_ms=NR_TTT_MS, ttt_cap_ms=640):
-    """GA-TTT (Algorithm 1): largest standard TTT such that the distance
+    """MB-TTT (Eq. 19): largest standard TTT such that the distance
     travelled during the worst-phase decision delay does not exceed the
-    q-quantile outage-margin distance kappa_q of the cell (Eq. 27)."""
+    q-quantile outage-margin distance kappa_q of the cell."""
     a = 2.0 ** (-k / 4.0) if l3 else 1.0
     ttt_max = kappa_q / max(v_hat, 0.3) - (Tm / a + Tm / 2 + t_prep)
     cand = ttt_set_ms[(ttt_set_ms <= ttt_max * 1e3) & (ttt_set_ms <= ttt_cap_ms)]
